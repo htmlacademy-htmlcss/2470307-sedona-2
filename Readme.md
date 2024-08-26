@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Непиющий](https://up.htmlacademy.ru/htmlcss-individual/2/user/2470307).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k)
+* Сайт: [Мой проект Седона](https://pavelnep1996.github.io/2470307-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
