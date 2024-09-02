@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a href="index.html" aria-current="page">
         <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
@@ -39,15 +39,15 @@
         <ul>
       </nav>
     </header>
-    <main class="index-page">
-      <section class="index-page-title-section">
+    <main class="index-page" data-test="main">
+      <section class="index-page-title-section" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
         <img class="sedona-main-picture" src="static/sedona-main-picture.svg" lang="en" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucky!">
       </section>
       <section class="index-page-description">
         <h2 class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       </section>
-      <section class="index-page-advantages">
+      <section class="index-page-advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -94,12 +94,12 @@
           </li>
         </ul>
       </section>
-      <section class="search-form-section">
+      <section class="search-form-section" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-form-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="index-subscribe-form-section">
+      <section class="index-subscribe-form-section" data-test="subscribe">
         <h2 class="index-subscribe">Подпишитесь на рассылку</h2>
         <p class="index-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="index-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -109,7 +109,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">

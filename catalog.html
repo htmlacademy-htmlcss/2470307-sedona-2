@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона. Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="logo" href="index.html">
         <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
@@ -39,7 +39,7 @@
         <ul>
       </nav>
     </header>
-    <main class="catalog">
+    <main class="catalog" data-test="main">
       <header class="catalog-header">
         <h1 class="catalog-page">Гостиницы Седоны</h1>
         <ul class="catalog-crumbs-list">
@@ -51,7 +51,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-filter">
+      <section class="catalog-filter" data-test=" filter">
         <h2 class="visually-hidden">Форма поиска</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-form-group">
@@ -148,7 +148,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog-search-hotels">
+      <section class="catalog-search-hotels" data-test="catalog">
         <ul class="catalog-search-hotels-list">
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
@@ -255,7 +255,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog-subscribe-form-section">
+      <section class="catalog-subscribe-form-section" data-test="subscribe">
         <h2 class="catalog-subscribe">Подпишитесь на рассылку</h2>
         <p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -265,7 +265,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
