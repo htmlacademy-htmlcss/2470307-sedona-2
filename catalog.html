@@ -7,7 +7,7 @@
   <body>
     <header class="page-header" data-test="header">
       <a class="logo" href="index.html">
-        <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип Седона">
+        <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -58,20 +58,20 @@
             <legend class="form-group-title">Инфраструктура</legend>
             <ul class="catalog-filter-form-checkbox-list">
               <li class="catalog-filter-form-checkbox-item">
-                <label class="controls" for="swimming-pool">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="swimming-pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-form-checkbox-item">
-                <label class="controls" for="parking-space">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="parking-space" id="parking-space" checked>
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="parking-space" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-form-checkbox-item">
-                <label class="controls" for="wi-fi">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="wi-fi" id="wi-fi">
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="wi-fi">
                   Wi-Fi
                 </label>
               </li class="catalog-filter-form-checkbox-item">
@@ -81,20 +81,20 @@
             <legend class="form-group-title">Тип жилья:</legend>
             <ul class="catalog-filter-form-radiobutton-list">
               <li class="catalog-filter-form-radiobutton-item">
-                <label class="controls" for="hotel">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" id="hotel" checked>
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-form-radiobutton-item">
-                <label class="controls" for="motel">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" id="motel">
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-form-radiobutton-item">
-                <label class="controls" for="apartment">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" id="apartment">
+                <label class="controls">
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type">
                   Апартаменты
                 </label>
               </li>
@@ -104,13 +104,13 @@
             <legend class="form-group-title">Стоимость, ₽</legend>
             <ul class="catalog-filter-form-number-list">
               <li class="catalog-filter-form-number-item">
-                <label class="controls" for="min-price">
-                  <input class="catalog-filter-form-input" type="number" name="min-price" id="min-price" value="0">
+                <label class="controls">
+                  <input class="catalog-filter-form-input" type="number" name="min-price" value="0">
                 </label>
               </li>
               <li class="catalog-filter-form-number-item">
-                <label class="controls" for="max-price">
-                  <input class="catalog-filter-form-input" type="number" name="max-price" id="max-price" value="9000">
+                <label class="controls">
+                  <input class="catalog-filter-form-input" type="number" name="max-price" value="9000">
                 </label>
               </li>
             </ul>
@@ -162,7 +162,6 @@
               <button class="favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">4 звезды</span>
-                <img class="hotel-star" src="static/star.svg" alt="4 звезды">
               </p>
               <p class="hotel-rating">
                 Рейтинг:
@@ -182,7 +181,6 @@
               <button class="favorite-button favorite-button-active">В избранном</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">4 звезды</span>
-                <img class="hotel-star" src="static/star.svg" alt="4 звезды">
               </p>
               <p class="hotel-rating">
                 Рейтинг:
@@ -202,7 +200,6 @@
               <button class="favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">3 звезды</span>
-                <img class="hotel-star" src="static/star.svg" alt="3 звезды">
               </p>
               <p class="hotel-rating">
                 Рейтинг:
@@ -222,7 +219,6 @@
               <button class="favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">2 звезды</span>
-                <img class="hotel-star" src="static/star.svg" alt="2 звезды">
               </p>
               <p class="hotel-rating">
                 Рейтинг:
@@ -231,29 +227,29 @@
             </article>
           </li>
         </ul>
-      </section>
-      <section class="catalog-pagination">
-        <h2 class="visually-hidden">Страницы</h2>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current" a>
-            <a class="pagination-link" href="#" aria-current="page">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+        <section class="catalog-pagination">
+          <h3 class="visually-hidden">Страницы</h3>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current" a>
+              <a class="pagination-link" href="#" aria-current="page">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </section>
       </section>
       <section class="catalog-subscribe-form-section" data-test="subscribe">
         <h2 class="catalog-subscribe">Подпишитесь на рассылку</h2>
@@ -271,17 +267,17 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-twitter" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden" lang="en">Vkontakte</span>
+              <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-facebook" href="https://t.me/htmlacademy">
-              <span class="visually-hidden" lang="en">Telegram</span>
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden" lang="en">YouTube</span>
+              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
@@ -289,9 +285,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-link" href="Tel:+78128121212" target="_blank" rel="noopener">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer-copyright">
-        <a class="footer-copyright-link" href="https://htmlacademy.ru">
+        <a class="footer-contacts-copyright-link" href="https://htmlacademy.ru">
           <span class="viseually-hidden">.html Academy</span>
         </a>
       </section>

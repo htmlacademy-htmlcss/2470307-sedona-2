@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="page-header" data-test="header">
       <a href="index.html" aria-current="page">
-        <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип Седона">
+        <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -44,19 +44,14 @@
         <h1 class="visually-hidden">Седона</h1>
         <img class="sedona-main-picture" src="static/sedona-main-picture.svg" lang="en" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucky!">
       </section>
-      <section class="index-page-description">
+      <section class="index-page-description" data-test="advantages">
         <h2 class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      </section>
-      <section class="index-page-advantages" data-test="advantages">
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      </section>
-      <section class="reasons-section">
-        <h2 class="visually-hidden">Причины</h2>
         <ul class="reasons-list">
           <li class="reasons-item">
             <h3 class="reasons-item-description">Настоящий городок</h3>
             <p class="reasons-item-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="reasons-item-really-town" src="static/really-town-sedona.jpg" alt="Город Седона">
           </li>
           <li class="reasons-item">
             <h3 class="reasons-item-description">Небольшая площадь</h3>
@@ -73,6 +68,7 @@
           <li class="reasons-item">
             <h3 class="reasons-item-description">Там есть мост дьявола</h3>
             <p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="reasons-item-devils-bridge" src="static/devils-bridge.jpg" alt="Мост Дьявола">
           </li>
         </ul>
       </section>
@@ -103,9 +99,9 @@
         <h2 class="index-subscribe">Подпишитесь на рассылку</h2>
         <p class="index-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="index-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-email">E-mail</label>
-            <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email" name="subscribe-email">
-            <button class="subscribe-button" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="subscribe-email">E-mail</label>
+          <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email" name="subscribe-email">
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -115,17 +111,17 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-twitter" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden" lang="en">Vkontakte</span>
+              <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-facebook" href="https://t.me/htmlacademy">
-              <span class="visually-hidden" lang="en">Telegram</span>
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden" lang="en">YouTube</span>
+              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
@@ -133,9 +129,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-link" href="Tel:+78128121212" target="_blank" rel="noopener">+7 (812) 812-12-12</a>
-      </section>
-      <section class="footer-copyright">
-        <a class="footer-copyright-link" href="https://htmlacademy.ru">
+        <a class="footer-contacts-copyright-link" href="https://htmlacademy.ru">
           <span class="viseually-hidden">.html Academy</span>
         </a>
       </section>
