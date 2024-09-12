@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Каталог</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
       <a class="logo" href="index.html">
-        <img class="sedona-logo-header" src="static/sedona-logo.svg" width="138" height="70" alt="Логотип города Седона">
+        <img class="sedona-logo-header" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -59,19 +60,19 @@
             <ul class="catalog-filter-form-checkbox-list">
               <li class="catalog-filter-form-checkbox-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="swimming-pool" checked>
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="infrastructure" value="swimming-pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-form-checkbox-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="parking-space" checked>
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="infrastructure" value="parking-space" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-form-checkbox-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="wi-fi">
+                  <input class="catalog-filter-form-radiobutton" type="checkbox" name="infrastructure" value="wi-fi">
                   Wi-Fi
                 </label>
               </li class="catalog-filter-form-checkbox-item">
@@ -82,19 +83,19 @@
             <ul class="catalog-filter-form-radiobutton-list">
               <li class="catalog-filter-form-radiobutton-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" checked>
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-form-radiobutton-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type">
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-form-radiobutton-item">
                 <label class="controls">
-                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type">
+                  <input class="catalog-filter-form-radiobutton" type="radio" name="hotel-type" value="apartment">
                   Апартаменты
                 </label>
               </li>
@@ -115,8 +116,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-form-search-button" type="submit">Применить</button>
-          <button class="catalog-form-reset-button" type="reset">Сбросить</button>
+          <button class="catalog-form-search-button" type="submit" value="submit">Применить</button>
+          <button class="catalog-form-reset-button" type="reset" value="reset">Сбросить</button>
         </form>
       </section>
       <section class="catalog-hotels-serch-list">
@@ -125,10 +126,10 @@
           Найдено гостиниц:
           <span сlass="search-quantity-hotels">38</span>
         </p>
-        <select class="catalog-hotels-sort">
-          <option>Сначала дешёвые</option>
-          <option>Сначала дорогие</option>
-          <option>По популярности</option>
+        <select class="catalog-hotels-sort" aria-label="Сортировка">
+          <option class="sort-item" value="cheap">Сначала дешёвые</option>
+          <option class="sort-item" value="expensive">Сначала дорогие</option>
+          <option class="sort-item" value="popular">По популярности</option>
         </select>
         <ul class="catalog-hotels-view-list">
           <li class="catalog-hotels-view-item catalog-hotels-view-link-current">
@@ -152,9 +153,9 @@
         <ul class="catalog-search-hotels-list">
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
-              <h3 class="catalog-search-hotels-card-title" lang="en">Amara Resort &amp; Spa</h3>
+              <h3 class="catalog-search-hotels-card-title">Amara Resort &amp; Spa</h3>
               <a class="catalog-search-hotels-card-link" href="#">
-                <img class="catalog-search-hotels-card-image" src="static/amara-resort-and-spa.jpg" width="300" height="212" lang="en" alt="Amara Resort &amp; Spa">
+                <img class="catalog-search-hotels-card-image" src="/images/hotel-1.jpg" width="300" height="212" alt="Звёздное небо через ущелье">
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 4000 ₽</p>
@@ -171,9 +172,9 @@
           </li>
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
-              <h3 class="catalog-search-hotels-card-title" lang="en">Villas at Poco Diablo</h3>
+              <h3 class="catalog-search-hotels-card-title">Villas at Poco Diablo</h3>
               <a class="catalog-search-hotels-card-link" href="#">
-                <img class="catalog-search-hotels-card-image" src="static/villas-at-poco-diablo.jpg" width="300" height="212" lang="en" alt="Villas at Poco Diablo">
+                <img class="catalog-search-hotels-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Скалы и радуга">
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 5000 ₽</p>
@@ -190,9 +191,9 @@
           </li>
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
-              <h3 class="catalog-search-hotels-card-title" lang="en">Desert Qual Inn</h3>
+              <h3 class="catalog-search-hotels-card-title">Desert Qual Inn</h3>
               <a class="catalog-search-hotels-card-link" href="#">
-                <img class="catalog-search-hotels-card-image" src="static/desert-quail-inn.jpg" width="300" height="212" lang="en" alt="Desert Qual Inn">
+                <img class="catalog-search-hotels-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Скалы и деревья">
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 2500 ₽</p>
@@ -209,9 +210,9 @@
           </li>
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
-              <h3 class="catalog-search-hotels-card-title" lang="en">GreenTree Inn</h3>
+              <h3 class="catalog-search-hotels-card-title">GreenTree Inn</h3>
               <a class="catalog-search-hotels-card-link" href="#">
-                <img class="catalog-search-hotels-card-image" src="static/greentree-inn.jpg" width="300" height="212" lang="en" alt="GreenTree Inn">
+                <img class="catalog-search-hotels-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Скалы и звёздное небо">
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 1500 ₽</p>
@@ -281,12 +282,9 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-link" href="Tel:+78128121212" target="_blank" rel="noopener">+7 (812) 812-12-12</a>
         <a class="footer-contacts-copyright-link" href="https://htmlacademy.ru">
-          <span class="viseually-hidden">.html Academy</span>
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </section>
     </footer>
