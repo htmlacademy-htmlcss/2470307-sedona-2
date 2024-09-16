@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Каталог</title>
-    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -35,24 +35,24 @@
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Хочу сюда</a>
+            <a class="button navigation-user-link button-want-here" href="#">Хочу сюда</a>
           </li>
         <ul>
       </nav>
     </header>
     <main class="catalog" data-test="main">
-      <header class="catalog-header">
-        <h1 class="catalog-page">Гостиницы Седоны</h1>
-        <ul class="catalog-crumbs-list">
-          <li class="catalog-crumbs-item">
-            <a class="catalog-crumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="catalog-crumbs-item">
-            <a class="catalog-crumbs-link catalog-crumbs-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
       <section class="catalog-filter" data-test="filter">
+        <header class="catalog-header">
+          <h1 class="catalog-title">Гостиницы Седоны</h1>
+          <ul class="catalog-crumbs-list">
+            <li class="catalog-crumbs-item">
+              <a class="catalog-crumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="catalog-crumbs-item">
+              <a class="catalog-crumbs-link catalog-crumbs-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <h2 class="visually-hidden">Форма поиска</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-form-group">
@@ -106,18 +106,20 @@
             <ul class="catalog-filter-form-number-list">
               <li class="catalog-filter-form-number-item">
                 <label class="controls">
+                  от
                   <input class="catalog-filter-form-input" type="number" name="min-price" value="0">
                 </label>
               </li>
               <li class="catalog-filter-form-number-item">
                 <label class="controls">
+                  до
                   <input class="catalog-filter-form-input" type="number" name="max-price" value="9000">
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-form-search-button" type="submit" value="submit">Применить</button>
-          <button class="catalog-form-reset-button" type="reset" value="reset">Сбросить</button>
+          <button class="button catalog-form-search-button" type="submit" value="submit">Применить</button>
+          <button class="button catalog-form-reset-button" type="reset" value="reset">Сбросить</button>
         </form>
       </section>
       <section class="catalog-hotels-serch-list">
@@ -159,8 +161,8 @@
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 4000 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
+              <a class="button catalog-search-hotels-card-button" href="#">Подробнее</a>
+              <button class="button favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -178,8 +180,8 @@
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 5000 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="favorite-button favorite-button-active">В избранном</button>
+              <a class="button catalog-search-hotels-card-button" href="#">Подробнее</a>
+              <button class="button favorite-button favorite-button-active">В избранном</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -197,8 +199,8 @@
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 2500 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
+              <a class="button catalog-search-hotels-card-button" href="#">Подробнее</a>
+              <button class="button favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">3 звезды</span>
               </p>
@@ -216,8 +218,8 @@
               </a>
               <p class="type-hotel">Гостиница</p>
               <p class="cost-hotel">От 1500 ₽</p>
-              <a class="button" href="#">Подробнее</a>
-              <button class="favorite-button">В избранное</button>
+              <a class="button catalog-search-hotels-card-button" href="#">Подробнее</a>
+              <button class="button favorite-button">В избранное</button>
               <p class="hotel-stars">
                 <span class="visually-hidden">2 звезды</span>
               </p>
@@ -232,7 +234,7 @@
           <h3 class="visually-hidden">Страницы</h3>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current" a>
-              <a class="pagination-link" href="#" aria-current="page">1</a>
+              <a class="pagination-link pagination-item-current" href="#" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -243,8 +245,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+            <li class="pagination-item pagination-item-between">
+              <a class="pagination-link pagination-item-between" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -252,13 +254,13 @@
           </ul>
         </section>
       </section>
-      <section class="catalog-subscribe-form-section" data-test="subscribe">
-        <h2 class="catalog-subscribe">Подпишитесь на рассылку</h2>
-        <p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+      <section class="subscribe-form-section" data-test="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">E-mail</label>
           <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email" name="subscribe-email">
-          <button class="subscribe-button" type="submit">Подписаться</button>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -267,12 +269,12 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-link-twitter" href="https://vk.com/htmlacademy">
+            <a class="footer-social-link footer-social-link-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-link-facebook" href="https://t.me/htmlacademy">
+            <a class="footer-social-link footer-social-link-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
