@@ -37,7 +37,7 @@
           <li class="navigation-user-item">
             <a class="button navigation-user-link button-want-here" href="#">Хочу сюда</a>
           </li>
-        <ul>
+        </ul>
       </nav>
     </header>
     <main class="catalog" data-test="main">
@@ -75,7 +75,7 @@
                   <input class="catalog-filter-form-radiobutton" type="checkbox" name="infrastructure" value="wi-fi">
                   Wi-Fi
                 </label>
-              </li class="catalog-filter-form-checkbox-item">
+              </li>
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-form-group">
@@ -123,10 +123,10 @@
         </form>
       </section>
       <section class="catalog-hotels-serch-list">
-        <h2 class="visually-hidden">Список гостиниц</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="search-title">
           Найдено гостиниц:
-          <span сlass="search-quantity-hotels">38</span>
+          <span>38</span>
         </p>
         <select class="catalog-hotels-sort" aria-label="Сортировка">
           <option class="sort-item" value="cheap">Сначала дешёвые</option>
@@ -152,6 +152,7 @@
         </ul>
       </section>
       <section class="catalog-search-hotels" data-test="catalog">
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-search-hotels-list">
           <li class="catalog-search-hotels-item">
             <article class="catalog-search-hotels-card">
@@ -233,7 +234,7 @@
         <section class="catalog-pagination">
           <h3 class="visually-hidden">Страницы</h3>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current" a>
+            <li class="pagination-item pagination-item-current">
               <a class="pagination-link pagination-item-current" href="#" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
