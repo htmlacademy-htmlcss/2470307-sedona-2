@@ -1312,17 +1312,30 @@ body {
 }
 
 .pagination-link-current:hover,
-.pagination-link-current:focus,
+.pagination-link-current:focus {
+  color: #000000;
+  background-color: #f2f2f2;
+  opacity: 0.6;
+
+}
+
 .pagination-link-current:active {
   color: #000000;
   background-color: #f2f2f2;
+  opacity: 0.6;
 }
 
 .pagination-link-between:hover,
-.pagination-link-between:focus,
-.pagination-link-between:active {
+.pagination-link-between:focus {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  opacity: 0.6;
+}
+
+.pagination-link-between:active {
+  opacity: 0.6;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 /* End Catolog Pagination styles */
