@@ -2,17 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Academy: Седона</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a href="index.html" aria-current="page">
-            <img class="sedona-logo-header" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона" />
-          </a>
           <ul class="navigation-list">
+            <li class="navigation-item navigation-logo">
+              <a class="logo-link" href="index.html" aria-current="page">
+                <img class="sedona-logo-header" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона." />
+              </a>
+            </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
@@ -24,19 +27,19 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-numbers">12</span>
               </a>
             </li>
-            <li class="navigation-user-item">
-              <a class="button navigation-user-link button-want-here" href="#">Хочу сюда</a>
+            <li class="navigation-item">
+              <a class="button button-want-here button-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -60,65 +63,66 @@
                   <h3 class="reasons-subtitle-item other-colors">Настоящий городок</h3>
                   <p class="reasons-item-description other-colors">Седона — не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="reasons-item-really-town" src="images/really-town-sedona.jpg" width="800" height="385" alt="Город Седона" />
+                <img class="reasons-item-really-town" src="images/really-town-sedona.jpg" width="800" height="385" alt="Город Седона." />
               </li>
               <li class="reasons-item reasons-item-wrapper">
                 <h3 class="reasons-subtitle-item">Небольшая площадь</h3>
                 <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="reasons-item reasons-item-wrapper">
-                <h3 class="reasons-subtitle-item">Красивая дорога</h3>
+                <h3 class="reasons-subtitle-item">Красивая<br>дорога</h3>
                 <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="reasons-item reasons-item-wrapper">
-                <h3 class="reasons-subtitle-item">Мало туристов</h3>
+                <h3 class="reasons-subtitle-item">Мало<br>туристов</h3>
                 <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
               <li class="reasons-item devils-bridge wide-block">
-                <img class="reasons-item-devils-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола" />
+                <img class="reasons-item-devils-bridge" src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола." />
                 <div class="reasons-wrapper">
-                  <h3 class="reasons-subtitle-item other-colors">Там есть мост дьявола</h3>
+                  <h3 class="reasons-subtitle-item other-colors">Там есть<br>мост дьявола</h3>
                   <p class="reasons-item-description other-colors">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
               </li>
             </ul>
           </section>
           <section class="advantages-section">
-            <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
+            <div class="advantages-wrapper">
+              <h2 class="advantages-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+              <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
+            </div>
             <ul class="advantages-list">
               <li class="advantages-item">
-                <h3>Жилье</h3>
-                <p class="advantages-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <h3 class="services-title services-title-housing">Жильё</h3>
+                <p class="advantages-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
               <li class="advantages-item">
-                <h3>Еда</h3>
-                <p class="advantages-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <h3 class="services-title services-title-foods">Еда</h3>
+                <p class="advantages-item-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item">
-                <h3>Сувениры</h3>
-                <p class="advantages-item-description">Не только китайского, но и настоящего местного производства!</p>
+                <h3 class="services-title services-title-suvenirs">Сувениры</h3>
+                <p class="advantages-item-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
               </li>
             </ul>
           </section>
           <section class="search-form-section" data-test="search">
             <h2 class="search-form-title">Заинтересовались?</h2>
             <p class="search-form-description">
-              Укажите предполагаемые даты поездки,<br />
+              Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
-            <a class="button search-form-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+            <a class="button search-form-button button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
           </section>
           <section class="subscribe-form-section subscribe-form-special" data-test="subscribe">
             <h2 class="subscribe-title subscribe-title-special">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description subscribe-description-special">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-description subscribe-description-special">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscribe-email">E-mail</label>
               <input class="subscribe-form-email" type="email" placeholder="Ваш e-mail" id="subscribe-email" name="subscribe-email" />
-              <button class="button subscribe-button" type="submit">Подписаться</button>
+              <button class="button subscribe-button button-blue" type="submit">Подписаться</button>
             </form>
           </section>
-        </div>
       </main>
       <footer class="page-footer" data-test="footer">
         <div class="footer-container">
@@ -154,6 +158,79 @@
           </section>
         </div>
       </footer>
+    </div>
+    <div class="modal-container modal-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-wrapper">
+              <label class="modal-label" for="date-start">Дата заезда:</label>
+              <span class="modal-field">
+                <input type="text" name="date-start" id="date-start" value="27 апреля 2020" placeholder="Укажите дату" required>
+                <span class="modal-help-text modal-help-text-error">Мы не можем отправить вас в прошлое.</span>
+              </span>
+            </p>
+            <p class="modal-wrapper">
+              <label class="modal-label" for="date-end">Дата выезда:</label>
+              <span class="modal-field">
+                <input type="text" name="date-end" id="date-end" value="1 сентября 2023" placeholder="Укажите дату" required>
+                <span class="modal-help-text">На эти даты есть свободные номера. Пока есть.</span>
+              </span>
+            </p>
+            <div class="modal-wrapper-pack">
+              <p class="modal-wrapper">
+                <label class="modal-label" for="modal-adult">Взрослые:</label>
+                <span class="modal-field-calc">
+                  <button class="button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
+                    </svg>
+                  </button>
+                  <input type="number" name="modal-adult" id="modal-adult" value="2" placeholder="0" required>
+                  <button class="button-more" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                  </button>
+                </span>
+              </p>
+              <p class="modal-wrapper">
+                <span class="modal-label">
+                  <label for="modal-child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <span class="visually-hidden">Подсказка</span>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <span class="modal-field-calc">
+                  <button class="button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
+                    </svg>
+                  </button>
+                  <input type="number" name="modal-child" id="modal-child" value="2" placeholder="0" required>
+                  <button class="button-more" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                  </button>
+                </span>
+              </p>
+            </div>
+            <button class="button button-blue modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
